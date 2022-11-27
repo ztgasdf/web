@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
+<title>DIVINITY 2022</title>
+<style>
+.container {
+width:854px;
+margin: 0 auto;
+}
+#player {
+height:480px;
+}
+.plyr {
+  border-radius: 8px;  margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+<h2>WORK IN PROGRESS, DO NOT REDISTRIBUTE</h2>
+<div class="container">
+  <video controls crossorigin playsinline poster="poster.png" id="player">
+    <source src="https://z.tess.eu.org/6dc6cf387e3cdd2d30ad2dd36a52ca3cf99ba218aa9173e85af180d1abeca94f.mp4" type="video/mp4">
+    <a href="https://z.tess.eu.org/6dc6cf387e3cdd2d30ad2dd36a52ca3cf99ba218aa9173e85af180d1abeca94f.mp4" download>Download</a>
+  </video>
+</div>
+<script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
+<script>
+  const player = new Plyr('#player');
+</script>
+</body>
